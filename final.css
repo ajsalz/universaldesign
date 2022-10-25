@@ -1,0 +1,289 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+}
+
+header,
+body {
+
+	margin: 0 auto;
+	max-width: 1600px;
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+
+}
+
+header {
+	align-content: center;
+	text-align: center;
+	margin: 2em;
+	background-color: white;
+
+}
+
+
+h2.invisible {
+	display: none;
+
+}
+
+.unaccessible,
+.doorExample {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2em;
+	gap: 1em;
+}
+
+p a {
+	color: black;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+figure {
+
+	text-align: center;
+	padding: 2em 0em 2em;
+
+}
+
+figcaption {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: .5em;
+}
+
+h2.callToAction {
+	color: black;
+	font-size: 32pt;
+	text-align: center;
+	padding-right: .5em;
+	padding-left: .5em;
+}
+
+h1,
+h2 {
+	font-family: 'Poppins', sans-serif;
+	color: red;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+h1 {
+	font-size: 48pt;
+}
+
+header h2 {
+	font-family: 'Poppins', sans-serif;
+	/* font-weight: 300; */
+	font-style: bold;
+	color: black;
+	letter-spacing: 2px;
+	font-size: 18pt;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	/* font-weight: 300; */
+	letter-spacing: 2px;
+	font-style: bold;
+	color: black;
+	font-size: 16pt;
+	margin: 0;
+}
+
+p,
+nav {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+
+}
+
+
+
+nav {
+	background-color: black;
+	overflow: hidden;
+	text-align: center;
+	flex-flow: row;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.sources a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+}
+
+ul {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: black;
+	padding: 1em 0em 2em;
+
+}
+
+
+footer ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin: 0;
+	background: black;
+	padding: 2em 0em 2em;
+}
+
+footer a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+}
+
+a {
+
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #adadad;
+}
+
+a:active {
+	color: #fcb3b3;
+}
+
+li {
+	display: inline;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+}
+
+ul.principles {
+	font-size:16pt;
+}
+
+section {
+	padding: 1.5em 20% 2em;
+}
+
+section h2 {
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+
+p {
+	padding-bottom: 1em;
+	font-size: 16pt;
+}
+
+@media screen and (max-width:850px) {
+	section {
+		padding: 1.5em 15% 2em;
+	}
+}
+
+@media screen and (max-width: 750px) {
+
+	section {
+		padding: .5em 7% 2em;
+	}
+
+	.unaccessible,
+	.doorExample {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: center;
+		/*		width: 100%;*/
+		margin: 3em;
+		gap: 0em;
+	}
+
+	h2.callToAction {
+		color: black;
+		font-size: 24pt;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-display: 28pt;
+	}
+
+	nav {
+		padding: 0pt;
+	}
+
+	nav ul {
+		display: flex;
+		flex-flow: column wrap;
+		padding: .5em;
+
+	}
+
+	li {
+		padding: 7pt;
+	}
+
+
+	h1 {
+		font-size: 32pt;
+	}
+
+	section {
+		padding: .5em 7% 2em;
+	}
+
+	.unaccessible,
+	.doorExample {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 3em;
+		gap: 0em;
+	}
+
+	h2.callToAction {
+		color: black;
+		font-size: 24pt;
+		text-align: center;
+	}
+
+	p {
+		font-size: 14pt;
+	}
+
+}
